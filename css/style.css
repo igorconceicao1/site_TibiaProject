@@ -19,6 +19,7 @@
     --cor3: #8370CC;
     --cor4: #524680;
     --cor5: #706C80;
+    --cor-link-hover: #c442c098;
 
 }
 
@@ -70,7 +71,7 @@ nav > a{
 }
 
 nav > a:hover{
-    color: #c442c098;
+    color: var(--cor-link-hover);
     background-color: var(--cor1);
     border-radius: 5px;
 
@@ -83,9 +84,6 @@ main {
     border-radius: 10px;
     padding: 10px;
     margin: 40px 80px;
-
-
-
 }
 
 main p {
@@ -97,6 +95,23 @@ main p {
     margin: 15px 0px;
     line-height: 2em;
 }
+
+main a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2px;
+
+    
+}
+
+main a:hover {
+    color: var(--cor-link-hover);
+    background-color: var(--cor0);
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
 
 img {
     width: 100%; /*para ela seguir o main, se encaixar no tamanho*/
@@ -113,6 +128,25 @@ h2{
     color: #291528;
     text-align: center;
 
+}
+
+main section p#ultimo_p{
+    text-align: center;
+}
+
+.video {
+    background-color: var(--cor4);
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 55.5%;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 footer {
